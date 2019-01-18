@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>slide</title>
+  <link href="css/card.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+<div class="content">
+  <ul class="box">
+    <li>
+      <a href="#"><img src="images/1.jpg"></a>
+    </li>
+    <li>
+      <a href="#"><img src="images/2.jpg"></a>
+    </li>
+    <li>
+      <a href="#"><img src="images/3.jpg"></a>
+    </li>
+    <li>
+      <a href="#"><img src="images/4.jpg"></a>
+    </li>
+    <li>
+     <a href="#"><img src="images/5.jpg"></a>
+    </li>
+    <li>
+      <a href="#"><img src="images/6.jpg"></a>
+    </li>
+  </ul>
+
+  <div class="leftB">&lt;</div>
+  <div class="rightB">&gt;</div>
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script>
+  slide(".box", "li", 2000, ".leftB", ".rightB")
+
+  $(".leftB,.rightB").hover(function () {
+    $(this).css("background", "rgba(0, 0, 0, 0.6)")
+  }, function () {
+    $(this).css("background", "rgba(0, 0, 0, 0.5)")
+  });
+
+  $(".content").mouseenter(function () {
+    $(".leftB,.rightB").fadeIn(200);
+  }).mouseleave(function () {
+    $(".leftB,.rightB").fadeOut(200);
+  });
+
+</script>
+
+</html>

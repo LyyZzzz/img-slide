@@ -1,0 +1,88 @@
+* {
+  paddding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "微软雅黑";
+}
+
+.content {
+  width: 590px;
+  height: 340px;
+  border: 3px solid red;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  display: inline-flex;
+  padding: 0;
+  position: absolute;
+}
+
+.box li {
+  float: left;
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*display: none;*/
+}
+
+.shu {
+  position: absolute;
+  bottom: 10px;
+  left: -30px;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+
+.shu li {
+  width: 20px;
+  height: 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.shu li.active {
+  background: #a00;
+}
+
+.rightB {
+  width: 50px;
+  height: 70px;
+  font-size: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  top: 45%;
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+.leftB {
+  width: 50px;
+  height: 70px;
+  font-size: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 45%;
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
